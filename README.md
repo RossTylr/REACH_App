@@ -2,7 +2,7 @@
      - ./REACH_App/data/logo/Logo.png
 -->
 <p align="center">
-  <img src="./data/logo/logo.jpeg" alt="REACH Map Logo" height="64" />
+  <img src="./data/logo/logo.jpeg" alt="REACH Map Logo" height="256" />
 
 </p>
 
