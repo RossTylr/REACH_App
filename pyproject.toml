@@ -1,0 +1,62 @@
+[project]
+name = "reach-map"
+version = "0.1.0"
+description = "NHS Southwest emergency response coverage planning tool"
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+authors = [{ name = "Ross Taylor" }]
+dynamic = ["dependencies"]
+
+
+[tool.poetry]
+# Keep this section (Poetry still uses it), but metadata above satisfies modern tooling.
+# You may leave name/version/description/authors/readme here too; however, prefer a single source of truth.
+packages = [{ include = "reach", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.36"
+pandas = "^2.2"
+geopandas = "^0.14"
+pydeck = "^0.9"
+scipy = "^1.11"
+pydantic = "^2.7"
+pydantic-settings = "^2.3"
+python-dotenv = "^1.0"
+loguru = "^0.7"
+networkx = "^3.3"
+pulp = "^2.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+pytest-cov = "^5.0"
+black = "^24.4"
+mypy = "^1.10"
+ruff = "^0.5"
+pre-commit = "^3.7"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+# Prefer measuring the package, not the folder.
+# If your package import name is different, change reach -> <your_package_name>.
+addopts = "--cov=reach --cov-report=html --cov-report=term"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
