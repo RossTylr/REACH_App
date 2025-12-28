@@ -1,25 +1,20 @@
-<!-- Place logo files at:
-     - docs/assets/nhs-logo.png
-     - REACH_App/data/logo/Logo.png
+<!-- Logo file (repo-relative path):
+     - ./REACH_App/data/logo/Logo.png
 -->
 <p align="center">
-  <img src="docs/assets/nhs-logo.png" alt="NHS Logo" height="64">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="REACH_App/data/logo/Logo.png" alt="REACH Map Logo" height="64">
+  <img src="./REACH_App/data/logo/Logo.png" alt="REACH Map Logo" height="64" />
 </p>
 
 <p align="center">
-  <a href="https://streamlit.io" target="_blank">
-    <img src="https://img.shields.io/badge/Built%20with-Streamlit-FF4B4B.svg" alt="Built with Streamlit">
+  <a href="https://streamlit.io" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Built%20with-Streamlit-FF4B4B.svg" alt="Built with Streamlit" />
   </a>
-  <img src="https://img.shields.io/badge/python-3.11-blue.svg" alt="Python 3.11">
-  <img src="https://img.shields.io/badge/GeoPandas-0.14-green" alt="GeoPandas 0.14">
-  <a href="https://github.com/RossTylr/REACH-Map-NHS-SW/blob/main/LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  <img src="https://img.shields.io/badge/python-3.11-blue.svg" alt="Python 3.11" />
+  <img src="https://img.shields.io/badge/GeoPandas-0.14-green" alt="GeoPandas 0.14" />
+  <a href="https://github.com/RossTylr/REACH-Map-NHS-SW/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" />
   </a>
 </p>
-
-
 
 # REACH App  
 Response and Emergency Access Coverage — Interactive Planning Tool
